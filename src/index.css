@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(27, 66%, 92%);
+}
+
+.Expenses {
+  min-height: 100vh;
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  overflow-y: auto;
+}
+
+.Expenses .main {
+  width: clamp(20%, 450px, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+.Expenses .current {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.Expenses .brown {
+  color: hsl(28, 10%, 53%);
+}
+
+.Expenses .dark-brown {
+  color: hsl(25, 47%, 15%);
+}
+
+.Expenses .divider {
+  border: 0;
+  height: 1px;
+  margin: 2rem auto;
+  background-color: lightgray;
+}
+
+.Expenses .balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.Expenses .amount {
+  color: hsl(33, 100%, 98%);
+  width: fit-content;
+}
+
+.Expenses .chart {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: hsl(33, 100%, 98%);
+}
+
+.Expenses .header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.Expenses #weeks {
+  font-size: 0.9rem;
+  box-shadow: none;
+  width: fit-content;
+  background-color: hsl(33, 100%, 98%);
+  border: 0;
+  outline: 0;
+}
+
+.Expenses .bars {
+  height: 150px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.Expenses .bars > div {
+  width: 25px;
+  border-radius: 0.25rem;
+  transition: height 0.25s ease;
+}
+
+.Expenses .bar:hover {
+  opacity: 0.75;
+}
+
+.Expenses .bar:hover > .Tooltip {
+  opacity: 1;
+  z-index: 2;
+}
+
+.Expenses .Tooltip {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -35px;
+  color: hsl(33, 100%, 98%);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  background-color: black;
+  transition: 0.25s;
+}
+
+.Expenses .days {
+  color: hsl(28, 10%, 53%);
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.Expenses .days > span {
+  font-size: 0.95rem;
+  width: 25px;
+  text-align: center;
+}
+
+.Expenses .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .Expenses .balance {
+    padding: 1.5rem 1.75rem;
+  }
+
+  .Expenses .chart {
+    padding: 1.75rem;
+  }
+
+  .Expenses .bars > div {
+    width: 30px;
+  }
+
+  .Expenses .days > span {
+    width: 30px;
+  }
+
+  .Expenses .Tooltip {
+    font-size: 0.8em;
+  }
+}
