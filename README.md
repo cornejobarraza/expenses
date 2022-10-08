@@ -1,3 +1,9 @@
 # Expenses chart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Application that represents weekly expenses in a dynamic chart by gathering data from a local JSON file.
+
+This project was created with:
+
+- [React 18.2](https://reactjs.org/)
+
+Deployed to GitHub Pages using the [gh-pages](https://www.npmjs.com/package/gh-pages) package.
