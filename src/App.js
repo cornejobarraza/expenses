@@ -14,7 +14,7 @@ function App() {
 
   const fetchExpenses = async () => {
     try {
-      const res = await fetch("https://cornejobarraza.github.io/res/data/expenses.json");
+      const res = await fetch("https://cornejobarraza.dev/res/data/expenses.json");
       const data = await res.json();
       return data;
     } catch (err) {
