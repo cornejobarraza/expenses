@@ -1,0 +1,134 @@
+[
+  {
+    "week": 1,
+    "spendings": [
+      {
+        "day": "mon",
+        "amount": 17.45
+      },
+      {
+        "day": "tue",
+        "amount": 34.91
+      },
+      {
+        "day": "wed",
+        "amount": 52.36
+      },
+      {
+        "day": "thu",
+        "amount": 31.07
+      },
+      {
+        "day": "fri",
+        "amount": 23.39
+      },
+      {
+        "day": "sat",
+        "amount": 43.28
+      },
+      {
+        "day": "sun",
+        "amount": 25.48
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "spendings": [
+      {
+        "day": "mon",
+        "amount": 34.28
+      },
+      {
+        "day": "tue",
+        "amount": 64.18
+      },
+      {
+        "day": "wed",
+        "amount": 98.48
+      },
+      {
+        "day": "thu",
+        "amount": 54.33
+      },
+      {
+        "day": "fri",
+        "amount": 75.11
+      },
+      {
+        "day": "sat",
+        "amount": 35.47
+      },
+      {
+        "day": "sun",
+        "amount": 20.14
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "spendings": [
+      {
+        "day": "mon",
+        "amount": 28.26
+      },
+      {
+        "day": "tue",
+        "amount": 59.11
+      },
+      {
+        "day": "wed",
+        "amount": 42.0
+      },
+      {
+        "day": "thu",
+        "amount": 97.5
+      },
+      {
+        "day": "fri",
+        "amount": 32.73
+      },
+      {
+        "day": "sat",
+        "amount": 76.77
+      },
+      {
+        "day": "sun",
+        "amount": 22.49
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "spendings": [
+      {
+        "day": "mon",
+        "amount": 46.8
+      },
+      {
+        "day": "tue",
+        "amount": 31.27
+      },
+      {
+        "day": "wed",
+        "amount": 61.02
+      },
+      {
+        "day": "thu",
+        "amount": 33.94
+      },
+      {
+        "day": "fri",
+        "amount": 89.51
+      },
+      {
+        "day": "sat",
+        "amount": 97.23
+      },
+      {
+        "day": "sun",
+        "amount": 58.58
+      }
+    ]
+  }
+]

@@ -1,26 +1,16 @@
 import { useEffect, useState } from "react";
 
+import expenses from "./data/expenses.json";
+
 function App() {
   const [items, setItems] = useState({ data: [], currentData: [], currentTotal: 0 });
 
   useEffect(() => {
-    fetchExpenses().then((res) => {
-      const firstData = listData(res, 0);
-      const firstTotal = listTotal(res, 0);
+    const firstData = listData(expenses, 0);
+    const firstTotal = listTotal(expenses, 0);
 
-      setItems({ data: res, currentData: firstData, currentTotal: firstTotal });
-    });
+    setItems({ data: expenses, currentData: firstData, currentTotal: firstTotal });
   }, []);
-
-  const fetchExpenses = async () => {
-    try {
-      const res = await fetch("https://cornejobarraza.dev/res/data/expenses.json");
-      const data = await res.json();
-      return data;
-    } catch (err) {
-      console.error(err);
-    }
-  };
 
   const listData = (data, week) => {
     const weekday = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
